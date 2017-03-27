@@ -90,15 +90,16 @@ function makeBuddies() {
   // create an aside tag
   var aside = document.createElement('aside');
   var buddiesGroup = document.createElement('ul');
-  for (var i = 0; i > buddies.length; i++) {
+  for (var i = 0; i < buddies.length; i++) {
  // attach an unordered list of the 'buddies' in the aside
   var buddy = document.createElement('li');
   buddy.textContent = buddies[i];
   buddiesGroup.appendChild(buddy);
  // insert your aside as a child element of rivendell
-aside.appendChild(buddiesGroup);
-Rivendell.appendChild(aside);
   }
+aside.appendChild(buddiesGroup);
+rivendell.appendChild(aside);
+  
 }
 
 makeBuddies();
@@ -112,6 +113,7 @@ function beautifulStranger() {
   // change the 'Strider' textnode to 'Aragorn'
 strider.textContent = 'Aragon';
 }
+
 beautifulStranger();
 
 
@@ -119,6 +121,8 @@ beautifulStranger();
 
 function leaveTheShire() {
   // assemble the hobbits and move them to Rivendell
+
+
 }
 
 
